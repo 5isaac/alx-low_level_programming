@@ -1,7 +1,11 @@
 #include <stdio.h>
 
-int main(void)
+/**
+ * main - Enty points
+ * Return: Always 0(success)
+ */
+init main(void)
 {
-puts("\"programming is like building a multiligual puzzle")
+puts("\"Programmimg is like building a multilingual puzzle");
 return (0);
 }
