@@ -1,17 +1,19 @@
 #include <stdio.h>
-
 /**
- * main -> entry points
- * and print the last digits
- * Return : always 0
- */
+*main - Begin Here
+*print 0-9 using putchar
+*Return: Value 0 (true)
+**/
 int main(void)
 {
-	int n;
-	for (n = 0; n <10; n ++)
+	char ch = '0';
+	int i;
+
+	for (i = 0; i < 10; i++)
 	{
-		 printf("%d\n", n);
+		putchar(ch);
+		ch++;
 	}
-			 
-return (0);
+	putchar('\n');
+	return (0);
 }
