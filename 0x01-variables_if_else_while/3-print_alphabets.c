@@ -1,21 +1,25 @@
 #include <stdio.h>
 
 /**
- * Main -> Entry points
- * and print the last digit
- * Return : always 0
- */
+*main - Begin Here
+*print a-z and A-Z using putchar
+*Return: Value 0 (true)
+**/
 int main(void)
 {
-	int ch;
-	for (ch = 97; ch <= 122; ch ++)
+	char ch = 'a';
+	char CH = 'A';
+
+	while (ch <= 'z')
 	{
 		putchar(ch);
+		ch++;
 	}
-	for (ch =65; ch <= 90; ch ++)
+	while (CH <= 'Z')
 	{
-		putchar(ch);
+		putchar(CH);
+		CH++;
 	}
-	putchar(10); /* this is an ascii code for new line*/
+	putchar('\n');
 	return (0);
 }
