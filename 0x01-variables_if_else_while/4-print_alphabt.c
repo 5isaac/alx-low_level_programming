@@ -1,19 +1,25 @@
 #include <stdio.h>
-
 /**
- * main -> Entry points 
- * and print the last digit
- * Return : always 0
- */
+*main - Begin Here
+*print a-z using putchar except q and w
+*Return: Value 0 (true)
+**/
 int main(void)
 {
-	char ch;
-	for (ch = 'a'; ch <= 'z'; ch ++)
+	char ch = 'a';
+
+	while (ch <= 'z')
 	{
-		if (ch != 'q' && ch != 'e')
+		if (ch == 'q' || ch == 'e')
 		{
-		putchar(ch);
+			;
 		}
+		else
+		{
+			putchar(ch);
+		}
+		ch++;
 	}
-return (0);
+	putchar('\n');
+	return (0);
 }
