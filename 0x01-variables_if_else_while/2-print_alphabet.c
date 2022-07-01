@@ -1,18 +1,24 @@
 #include <stdio.h>
-
 /**
- * main -> Entry points
- * and print the last digits
- * return : always 0 
- */
+*main - Begin Here
+*print a-z and A-Z using putchar
+*Return: Value 0 (true)
+**/
 int main(void)
 {
-	int ch;
-	for (ch = 97; ch <= 122; ch++)
+	char ch = 'a';
+	char CH = 'A';
+
+	while (ch <= 'z')
 	{
 		putchar(ch);
+		ch++;
 	}
-	putshar(10); /* this is an ASCII code for new line*/
-
+	while (CH <= 'Z')
+	{
+		putchar(CH);
+		CH++;
+	}
+	putchar('\n');
 	return (0);
 }
