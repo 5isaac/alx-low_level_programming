@@ -1,24 +1,24 @@
 #include <stdio.h>
-
 /**
- * main -> entry points
- * and print the last digit
- * Return : always 0
- */
+*main - Begin Here
+*print 0-9 using putchar
+*Return: Value 0 (true)
+**/
 int main(void)
 {
-	int ch;
-	for (ch = 48; ch <= 57; ch ++)
-	{
-		putchar(ch);
-		if (ch != 57)
-		{
-			putchar(44);
-			putchar(32);
-		}
-	}
-	putchar(10); /** this is an ascii code for new line*/
+	int num1 = ((char)'0');
+	int i;
 
+	for (i = 0; i < 10; i++)
+	{
+		putchar(num1);
+		if (i < 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		num1++;
+	}
+	putchar('\n');
 	return (0);
 }
-

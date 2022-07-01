@@ -1,27 +1,17 @@
 #include <stdio.h>
-
 /**
- * main -> entry points 
- * and print the last digit 
- * Return : always 0
- */
+*main - Begin Here
+*print 0-9 using putchar
+*Return: Value 0 (true)
+**/
 int main(void)
 {
-	/**
-	 * hexadecimal
-	 * 0 1 2 3 4 5 6 7 8 9 a  b c d e f
-	 */
-	char ch;
-	int n;
-	for (n = 48; n <= 57; n ++)
-	{
-		putchar(n);
-	}
-	for (ch = 'a'; ch <= 'f'; ch ++)
-	{
-		putchar(ch);
-	}
-	putchar(10);
+	char num;
 
-	return (0)
-
+	for (num = '0'; num <= '9'; num++)
+		putchar(num);
+	for (num = 'a'; num <= 'f'; num++)
+		putchar(num);
+	putchar('\n');
+	return (0);
+}

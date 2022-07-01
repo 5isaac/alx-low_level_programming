@@ -1,31 +1,29 @@
 #include <stdio.h>
-
 /**
- * main -> entry points
- * and print the last digit
- * Return : always 0
- */
+*main - Begin Here
+*Return: Value 0 (true)
+**/
 int main(void)
 {
-	int ch;
-	int n;
-	for (ch = 48; ch <= 57; ch ++)
+	int num1, num2;
+
+	for (num1 = 0 + '0' ; num1 < 10 + '0'; num1++)
 	{
-		for ( n = 49; n <= 57; n ++)
+		for (num2 = num1 + 1; num2 < 10 + '0'; num2++)
 		{
-			if (n > ch) 
+			putchar(num1);
+			putchar(num2);
+			if (num1 >= (8 + '0') && num2 >= (8 + '0'))
 			{
-				putchar(ch);
-				putchar(n);
-				if (ch != 56 || n != 57)
-				{
-					putchar(44);
-					putchar(32);
-				}
+				;
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
-	putchar(10); /* this is an ascii code for new line*/
-
+	putchar('\n');
 	return (0);
 }
