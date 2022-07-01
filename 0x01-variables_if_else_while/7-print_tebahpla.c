@@ -1,18 +1,18 @@
 #include <stdio.h>
-
 /**
- * main -> entry points 
- * and print the last digit 
- * Return : always 0
- */
+*main - Begin Here
+*print z-a using putchar
+*Return: Value 0 (true)
+**/
 int main(void)
 {
-	char ch;
-	for (ch = 'z'; ch >= 'a'; ch --)
+	char ch = 'z';
+
+	while (ch >= 'a')
 	{
 		putchar(ch);
+		ch--;
 	}
-	putchar(10); /* this is an ascii code for new line*/
-
+	putchar('\n');
 	return (0);
 }
