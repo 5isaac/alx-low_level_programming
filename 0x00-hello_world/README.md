@@ -1,1 +1,1 @@
-thi is a c hello world readme
+Thi is a c hello world readme
