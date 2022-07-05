@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-*main - Begin Here
+*print_alphabet - Begin Here
 *print a-z and A-Z using putchar
 *Return: Value 0 (true)
-*/
-int main(void)
+**/
+void print_alphabet(void)
 {
 	char ch = 'a';
 
