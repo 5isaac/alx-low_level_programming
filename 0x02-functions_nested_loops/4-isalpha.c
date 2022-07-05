@@ -1,12 +1,12 @@
 #include "main.h"
-
 /**
- * _isalpha - Begin here
- * @c: Character ASCII Code
- *return 1 if lower or upper case and 0 otherwise
- *Return: value 0 (Success)
- */
-int _isalpha(int c)
+*_islower - Begin Here
+*@c: Character ASCII code
+*return 1 if lower case and 0 otherwise
+*Return: Value 0 (true)
+*/
+int _islower(int c)
+
 {
 	if (c <= 'z' && c >= 'a')
 	{
@@ -16,5 +16,5 @@ int _isalpha(int c)
 	{
 		return (0);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
