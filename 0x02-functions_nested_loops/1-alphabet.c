@@ -4,7 +4,7 @@
 *print a-z and A-Z using putchar
 *Return: Value 0 (true)
 */
-void print_alphabet(void)
+int main(void)
 {
 	char ch = 'a';
 
