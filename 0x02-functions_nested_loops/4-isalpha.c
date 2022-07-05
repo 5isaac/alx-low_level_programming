@@ -1,14 +1,14 @@
 #include "main.h"
+
 /**
-*_islower - Begin Here
+*_isalpha - Begin Here
 *@c: Character ASCII code
-*return 1 if lower case and 0 otherwise
+*return 1 if lower or upper case and 0 otherwise
 *Return: Value 0 (true)
 */
-int _islower(int c)
-
+int _isalpha(int c)
 {
-	if (c <= 'z' && c >= 'a')
+	if ((c <= 'Z' && c >= 'A') || (c >= 'a' && c <= 'z'))
 	{
 		return (1);
 	}
