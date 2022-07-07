@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- *_isdigit - check for a digit 0 through 9
- *@c: number in ASCII
- *Return: value 1 is c is a digit otherwise 0
- */
+* _isdigit - Check if a digit 0-9
+* @c: number in ASCII
+* Return: value 1 if a digit, else 0
+*/
 
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 	{

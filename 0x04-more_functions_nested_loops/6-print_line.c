@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_line - print numbers 0-9
- * @n: number of lines to be printed
- * return: void
- */
-void print_line(int n);
+* print_line - print number 0-9
+* @n: Number of lines to be printed
+* Return: void
+*/
+void print_line(int n)
 {
 	int i;
 
@@ -14,4 +14,3 @@ void print_line(int n);
 	}
 	_putchar('\n');
 }
-

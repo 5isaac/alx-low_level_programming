@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * print - numbers 0-9
- * return: void
- */
-void print_most_numbers(void);
+* print_most_numbers - print number 0-9
+* Return: void
+*/
+void print_most_numbers(void)
 {
 	int i;
 
@@ -13,7 +13,5 @@ void print_most_numbers(void);
 			continue;
 		_putchar(i + '0');
 	}
-	putchar('\n');
+	_putchar('\n');
 }
-
-

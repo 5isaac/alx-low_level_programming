@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_square - print numbers 0-9
- * @size: number of squares to be printed
- * return: void
- */
-void print_square(int size);
+* print_square - print square
+* @size: Number of diagonal lines to be printed
+* Return: void
+*/
+void print_square(int size)
 {
 	int i;
 	int j;

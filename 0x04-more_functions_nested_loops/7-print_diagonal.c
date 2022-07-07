@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_diagonal - print numbers 0-9
- * @n: number of diagonls to be printed
- * return: void
- */
-void print_diagonal(int n);
+* print_diagonal - print number 0-9
+* @n: Number of diagonal lines to be printed
+* Return: void
+*/
+void print_diagonal(int n)
 {
 	int i;
 	int j;
@@ -21,4 +21,3 @@ void print_diagonal(int n);
 	if (n <= 0)
 		_putchar('\n');
 }
-
