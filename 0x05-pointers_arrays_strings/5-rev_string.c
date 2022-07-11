@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * rev_string - use pointer to change value in memory
- * @s: pointer to string location
- *Return: Null/Void
- */
+* rev_string - Use pointer to change value in memory
+* @s: Pointer to string location
+*Return: Null/Void
+*/
 void rev_string(char *s)
 {
 	int i = 0;
@@ -13,8 +13,8 @@ void rev_string(char *s)
 
 	while (*s)
 	{
-		i++;
-		j++;
+	i++;
+	s++;
 	}
 	s--;
 	for (; i > 0; i--)
@@ -25,6 +25,6 @@ void rev_string(char *s)
 	}
 	s++;
 	count = j;
-	for (; j = 0; j < count; j++)
-		*(s + j) =  rev[j];
+	for (j = 0; j < count; j++)
+		*(s + j) = rev[j];
 }
