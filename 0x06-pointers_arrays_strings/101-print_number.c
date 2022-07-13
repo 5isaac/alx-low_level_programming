@@ -31,14 +31,16 @@ void print_number(int n)
 			i /= 10;
 		}
 		mux = 1;
+
 		for (j = 1; j <= len; j++)
 			mux *= 10;
+
 		for (j = 0; j <= len; j++)
 		{
 			out = n / mux;
 			_putchar(out + '0');
 			n -= (mux * out);
-			mux /= 10;
+			mux / = 10;
 		}
 	}
 }
