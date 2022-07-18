@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memset - function to fill the first bytes of mem
+ * _memset - function n to fill the first bytes of memory
  * @s: pointer to char param
  * @b: data to change
  * @n: index
@@ -14,7 +14,7 @@ char *_memset(char *s, char b, unsigned int n)
 
 	for (i = 0; i < n; i++)
 	{
-		s[i] = b;
+		*(s + i) = b;
 	}
 	return (s)
 }
