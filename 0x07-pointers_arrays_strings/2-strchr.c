@@ -1,21 +1,25 @@
 #include "main.h"
+
 /**
- * _strchr - Locates a character in a string
- * @s: Pointer to array location
- * @c: Constant byte to be searched
- * Return: Pointer to memory s
- */
+ * _strchr - prints found c
+ * @s: pointer to char
+ * @c: char params to found
+ * Return: *S
+*/
+
 char *_strchr(char *s, char c)
 {
-	int i = 0;
-
-	while (s[i])
+	while (*s != '\0')
 	{
-		if (s[i] == c)
-			return (s + i);
-		i++;
+		if (*s == c)
+		{
+			return (s);
+		}
+		s++;
 	}
-	if (s[i] == c)
-		return (s + i);
-	return (NULL);
+	if (*s == c)
+	{
+		return (s);
+	}
+return (0);
 }
