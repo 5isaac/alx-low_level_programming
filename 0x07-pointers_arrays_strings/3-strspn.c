@@ -1,27 +1,25 @@
-#include "main.h"
 /**
- * _strpbrk - function that gets the length of a prefix substring
- * @s: Pointer to string location
- * @accept: bytes to filter
- * Return: Pointer to memory s or Null if no match
- */
-char *_strpbrk(char *s, char *accept)
+* _strspn - Gets the length of a prefix substring.
+* @s: String where substring will look.
+* @accept: Substring of accepted chars.
+* Return: Length of occurrence.
+*/
+unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i = 0;
-	unsigned int j;
+	unsigned int c = 0;
+	char *t = accept;
 
-	while (s[i])
+	while (*s++)
 	{
-	j = 0;
-		while (accept[j])
-		{
-			if (s[i] == accept[j])
+		while (*accept++)
+			if (*(s - 1) == *(accept - 1))
 			{
-				return (s + i);
+				c++;
+				break;
 			}
-			j++;
-		}
-		i++;
+		if (!(*--accept))
+			break;
+		accept = t;
 	}
-	return (0);
+	return (c);
 }
