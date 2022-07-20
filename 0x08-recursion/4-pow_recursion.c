@@ -1,8 +1,8 @@
 /**
- *_pow_recursion - performs power of a number
- * @x: interger value
- * @y: power value
- * Return: factorial
+ * _pow_recursion - Performs power of a number
+ * @x: Integer Value
+ * @y: Power Value
+ * Return: Factorial
  */
 int _pow_recursion(int x, int y)
 {
@@ -15,6 +15,6 @@ int _pow_recursion(int x, int y)
 		if (y > 0)
 			return (x * (_pow_recursion(x, y - 1)));
 		else
-			return (0);
+			return (1);
 	}
 }

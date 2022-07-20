@@ -1,6 +1,6 @@
 /**
- * factorials - return factorial
- * @n: factorial integer
+ * factorial - returns factorial
+ * @n: Factorial Integer
  * Return: Factorial
  */
 int factorial(int n)
