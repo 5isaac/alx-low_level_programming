@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - change file path.
+ * main - print file path
  *
- * Return: always 0.
+ * Return: Always 0.
  */
 int main(void)
 {
-	printf("%s\n",  _FILE_);
+	printf("%s\n", __FILE__);
 	return (0);
 }
